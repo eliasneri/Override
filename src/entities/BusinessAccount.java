@@ -40,5 +40,18 @@ public class BusinessAccount extends Account{
 		}
 	}
 	
+	@Override
+	public void whitdraw(double amount) {
+		super.whitdraw(amount);
+		balance -= 2.0;
+		
+		/* Com o uso do super(), estou falando que será executado o método whitdraw, com a lógica, 
+		 * da super classe, no caso aqui, Account, após executar aquela lógica, irá executar 
+		 * a particularidade deste tipo de saque, da conta comercial, que irá subtrair o valor 2.0 além do saque.
+		 */
+		
+		
+	}
+	
 
 }

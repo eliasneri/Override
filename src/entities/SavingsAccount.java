@@ -23,7 +23,12 @@ public class SavingsAccount extends Account {
 	
 	public void updateBalance() {
 		balance += balance * interestRate;
+		
 	}
 	
+	@Override
+	public void whitdraw(double amount) {
+		balance -= amount;
+	}
 	
 }
